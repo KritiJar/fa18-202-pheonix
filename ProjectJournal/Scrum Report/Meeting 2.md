@@ -6,15 +6,14 @@ Date: 2018-11-14
 
 1. What tasks did I work on / complete?
 
-I worked on the following until this point
 
-* Applying design patterns for the score.
+Kriti: Done with unit test cases and use case diagrams.
+Ruchika: Decided design pattern for the score.
 
 2. What am I planning to work on next?
 
-I plan to wrap up the Sprint by doing the following
-
-* Update README.md files
+Ruchika: Update README.md files
+Kriti: Decide design pattern for the functionality and start working on class diagram.
 
 
 3. What tasks are blocked waiting on another team member?
