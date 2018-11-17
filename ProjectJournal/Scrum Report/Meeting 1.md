@@ -6,6 +6,12 @@ Stand-up Questions
        
 Que: What tasks did I work on / complete?
 
+
+Harsh: Created the User Story, Sub task, Issues and Project Board in GitHub
+         Edited Google Sheets for Burndown chart with task break down and hours
+         Built datamodel and database schema
+         Designed the system sequence diagram and use case diagram
+
 Ruchika: Created the User Story, Sub task, Issues and Project Board in GitHub
          Edited Google Sheets for Burndown chart with task break down and hours
          Built datamodel and database schema
