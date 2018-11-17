@@ -10,10 +10,12 @@ Date: 2018-11-14
 *Kriti: Done with unit test cases and use case diagrams.
 
 *Ruchika: Decided design pattern for the score.
+*Harsh: Planning design pattern for the score and more patterns that might be used.
 
 2. What am I planning to work on next?
 
 *Ruchika: Update README.md files
+*Harsh: Design pattern implementation
 *Kriti: Decide design pattern for the functionality and start working on class diagram.
 
 
