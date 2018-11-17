@@ -25,6 +25,8 @@ Que: What am I planning to work on next?
 
 Ruchika: Create unit test cases
 
+Harsh: Create strategy for project run
+
 Kriti:   Create Unit Test Cases and finish use case diagrams.
 
 
