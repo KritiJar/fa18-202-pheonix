@@ -11,7 +11,10 @@ Date: 2018-11-14
 
 *Ruchika: Decided design pattern for the score.
 
+*Hema: On a high level discussed the design patterns to be implemented with the team.
+
 *Harsh: Planning design pattern for the score and more patterns that might be used.
+
 
 2. What am I planning to work on next?
 
@@ -20,6 +23,8 @@ Date: 2018-11-14
 *Harsh: Design pattern implementation
 
 *Kriti: Decide design pattern for the functionality and start working on class diagram.
+
+*Hema: UML diagram (Sequence) to determine the flow.
 
 
 3. What tasks are blocked waiting on another team member?
