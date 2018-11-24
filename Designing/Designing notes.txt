@@ -1,1 +1,8 @@
-My first commit
+Zombie vs HeMan game
+
+Use cases:
+
+1. System will start with a he-man and three zombies.
+2. Zombies will be present at random locations.
+3. Food items will be added to screen at random places time to time.
+4.
