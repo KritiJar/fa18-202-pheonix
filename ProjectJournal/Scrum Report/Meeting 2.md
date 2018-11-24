@@ -7,13 +7,13 @@ Date: 2018-11-14
 1. What tasks did I work on / complete?
 
 
-*Kriti: Done with unit test cases and use case diagrams.
+*Kriti: Done with unit test cases and use case diagrams. Suggested some of the changes if the diagram
 
-*Ruchika: Decided design pattern for the score.
+*Ruchika: Decided design pattern for the score. Discussed class and sequence diagram with the whole team.
 
-*Hema: On a high level discussed the design patterns to be implemented with the team.
+*Hema: On a high level discussed the design patterns to be implemented with the team. Made contribution to the diagram
 
-*Harsh: Planning design pattern for the score and more patterns that might be used.
+*Harsh: Planning design pattern for the score and more patterns that might be used. Changed the some of the functionality.
 
 
 2. What am I planning to work on next?
