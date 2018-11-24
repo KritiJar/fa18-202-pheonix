@@ -1,8 +1,11 @@
 Zombie vs HeMan game
 
-Use cases:
+Requirements
 
 1. System will start with a he-man and three zombies.
 2. Zombies will be present at random locations.
 3. Food items will be added to screen at random places time to time.
-4.
+4. Sword and its handle will be placed at different places.
+5. When HeMan collects sword and handle, he can kill a zombie with that.
+6. FIrst aid kit will be placed randomly and when he-man gets that, even after colliding with zombie, he will not die.
+7. If zombie collides with heMan he man will die.
