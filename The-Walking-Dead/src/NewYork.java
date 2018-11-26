@@ -4,7 +4,7 @@ public class NewYork extends World
 {   
     Creator creator;
     Human h1;
-    ItemCollectionObserver ic = ItemCollectionObserver.getInstance();
+    ItemCollectionObserver ic = ItemCollectionObserver.getNewInstance();
     
     public NewYork() 
     {
@@ -59,10 +59,9 @@ public class NewYork extends World
     public Human addHumanToWorld(){
        Human h1;
        
-       addObject(new Cat(), 50, 450);
         
        h1 = new Human();
-       addObject(h1, 120, 420);
+       addObject(h1, 50, 420);
        return h1;
     }
     

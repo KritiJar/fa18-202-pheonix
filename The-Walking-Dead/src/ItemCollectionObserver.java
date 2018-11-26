@@ -33,6 +33,10 @@ public class ItemCollectionObserver implements Observer
         return instance;
     }
     
+    public static ItemCollectionObserver getNewInstance() {     
+        instance = new ItemCollectionObserver();
+        return instance;
+    }
     public void update(String item, Message m)
     {
         Human h1 = (Human) m.getWorld().getObjects(Human.class).get(0);
