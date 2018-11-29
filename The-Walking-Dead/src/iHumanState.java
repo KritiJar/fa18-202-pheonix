@@ -1,4 +1,3 @@
-
 public interface iHumanState  
 {
     public void setState();

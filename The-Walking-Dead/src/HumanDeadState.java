@@ -1,4 +1,4 @@
-/**
+/** 
  * Write a description of class humanDead here.
  * 
  * @author (your name) 

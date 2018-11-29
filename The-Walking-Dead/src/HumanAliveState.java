@@ -1,4 +1,4 @@
-public class HumanAliveState implements iHumanState  
+public class HumanAliveState implements iHumanState   
 {
     public Human human;
     

@@ -1,4 +1,4 @@
-public interface iItemCollectionFacade
+public interface iItemCollectionFacade 
 {
     public  void doAction();
 }
