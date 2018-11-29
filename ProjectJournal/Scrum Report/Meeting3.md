@@ -1,7 +1,7 @@
-#Scrum Report
+# Scrum Report
 Date: 2018-11-21
 
-Stand-up Questions
+## Stand-up Questions
 What tasks did I work on / complete?
 
 *Kriti: Done with sword functionality and implemented level state pattern
@@ -24,7 +24,7 @@ What am I planning to work on next?
 What tasks are blocked waiting on another team member?
 No blockers as of now
 
-XP Core Values
+## XP Core Values
 Communication: Team is effectively communicating over phone and meeting regularly
 
 Simplicity: Till now, team has worked on every task with simplicity 
