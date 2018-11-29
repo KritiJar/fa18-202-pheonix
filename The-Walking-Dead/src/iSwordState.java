@@ -1,4 +1,4 @@
-public interface iSwordState
+public interface iSwordState 
 {
     /**
      * Sword state

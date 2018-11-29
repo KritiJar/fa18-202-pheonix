@@ -1,4 +1,4 @@
-import greenfoot.*;  // imports Actor, World, Greenfoot, GreenfootImage
+import greenfoot.*;  //imports Actor, World, Greenfoot, GreenfootImage
 
 public class NewYork extends World 
 {   

@@ -1,4 +1,3 @@
-
 public interface Subject  
 {
     public  void attach(Observer obj);

@@ -1,4 +1,4 @@
-public class fullSwordState implements iSwordState  
+public class fullSwordState implements iSwordState   
 {
   public Sword sword;
     public fullSwordState(Sword sword)
