@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  //(World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 public class Human extends Actor implements Subject
 {
@@ -138,7 +138,6 @@ public class Human extends Actor implements Subject
             if(ItemCollectionObserver.hasSword){ // If human has a sword, kill and remove zombie
                 notifyObservers("zombie", m);
                 getWorld().addObject(blood, zombie.getX(), zombie.getY());
-                
                 getWorld().removeObject(zombie);
                 swordState.setSwordState(); //set swordState = No Sword
                 

@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  //(World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Food extends Actor // Food is the pizza slice that appears on the game.
 {

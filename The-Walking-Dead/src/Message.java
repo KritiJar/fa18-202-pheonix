@@ -1,5 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-//import java.awt.Font;
+import greenfoot.*;  //(World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Message extends Actor
 {

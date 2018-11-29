@@ -1,4 +1,3 @@
-
 import greenfoot.*;
 public class Sword extends Actor
 {
