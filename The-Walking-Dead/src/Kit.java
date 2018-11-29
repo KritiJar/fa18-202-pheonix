@@ -8,5 +8,9 @@ public class Kit extends Actor
         setImage(image1);
     }
     
+    /**
+     * Act of Kit
+     */
+    
     public void act(){}    
 }

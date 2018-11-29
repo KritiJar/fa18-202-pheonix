@@ -9,5 +9,8 @@ public class Gun extends Actor // Food is the pizza slice that appears on the ga
         setImage(image1);
     }
     
+    /**
+     * Act of Gun
+     */
     public void act(){}
 }

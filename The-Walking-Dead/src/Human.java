@@ -12,15 +12,19 @@ public class Human extends Actor implements Subject
     private ArrayList<Observer> observers =  new ArrayList<Observer>();
     private Context context;
     ItemCollectionObserver ic = ItemCollectionObserver.getInstance();
-    
+    private LevelContext levelContext; 
+    Creator creator;
     private int count = 0;
+    boolean eightZombieAdded=false;
+    boolean tenZombieAdded=false;
     
     //constructor 
     public Human(){
-        world =   getWorld();
+        //world = getWorld();
         GreenfootImage image1 = new GreenfootImage("Human.png");
         image1.scale(image1.getWidth() - 30, image1.getHeight() - 30);
         setImage(image1);
+        levelContext=new LevelContext();
         blood = new Blood();
         
         humanAliveState = new HumanAliveState(this); // * state pattern 1*
@@ -33,7 +37,7 @@ public class Human extends Actor implements Subject
     
     public void act() 
     {
-        m = (Message) getWorld().getObjects(Message.class).get(0);
+        m = Message.getInstance();
         /**
          * Check if human is intersecting any object
         */
@@ -45,16 +49,36 @@ public class Human extends Actor implements Subject
         startDelayManWithKit();
         checkFire();
         context.executeMovement(this);
+        setGameLevel();
         checkGameOver();// Strategy Pattern for moving human across the world.
-    }  
+    } 
+    
+    public void setGameLevel()
+    {
+        creator=new ZombieFactory();
+        if(ItemCollectionObserver.zombieKilled==5 && eightZombieAdded==false)
+        {
+            levelContext.setCurrentState(new LevelTwoState());
+            levelContext.doAction(m.getWorld());
+            eightZombieAdded=true;
+
+        }
+        else if(ItemCollectionObserver.zombieKilled==13&& tenZombieAdded==false)
+        {
+            levelContext.setCurrentState(new LevelThreeState());
+            levelContext.doAction(m.getWorld());
+            tenZombieAdded=true;
+        }
+    }
+    
     public void checkGameOver()
     {
-    if(ItemCollectionObserver.zombieKilled == 5){ // If number of zombies == 0, display "You Win" message! and stop the game.
-                    calculateScore();
-                    display();
-                    Greenfoot.stop();
-                }
-            }
+        if(ItemCollectionObserver.zombieKilled ==23){ // If number of zombies == 0, display "You Win" message! and stop the game.
+            calculateScore();
+            display();
+            Greenfoot.stop();
+        }
+    }
     public void checkForFood() 
     {
       food = getOneIntersectingObject(Food.class);
@@ -71,7 +95,7 @@ public class Human extends Actor implements Subject
         if(Greenfoot.isKeyDown("space") && ItemCollectionObserver.hasGun) {
             Greenfoot.delay(5);
             Bullet bullet = new Bullet();
-            bullet.attach(ic ); //attaching the ItemCollectionObserver
+            bullet.attach(ic); //attaching the ItemCollectionObserver
             bullet.attach(new SoundObserver()); // attaching the SoundObserver
             bullet.setRotation(180*Greenfoot.getRandomNumber(2));
             getWorld().addObject(bullet, getX(), getY());
@@ -114,6 +138,7 @@ public class Human extends Actor implements Subject
             if(ItemCollectionObserver.hasSword){ // If human has a sword, kill and remove zombie
                 notifyObservers("zombie", m);
                 getWorld().addObject(blood, zombie.getX(), zombie.getY());
+                
                 getWorld().removeObject(zombie);
                 swordState.setSwordState(); //set swordState = No Sword
                 
@@ -161,7 +186,7 @@ public class Human extends Actor implements Subject
         if(delayCount2==1)
             notifyObservers("kit", m);
         
-            if(delayCount2 > 70){
+            if(delayCount2 > 100){
             startDelay = false;
             delayCount2 = 0;
         }

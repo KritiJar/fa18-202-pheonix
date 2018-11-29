@@ -12,23 +12,38 @@ public class HumanDeadState implements iHumanState
     {
         this.human = human;
     }
+    
+    /**
+     * Human is alive
+     */
 
     public  boolean isAlive()
     {
         return false;
     }
     
+    /**
+     * Human is dead
+     */
+    
     public boolean isDead()
     {
         return true;
     }
     
+    /**
+     * Set state
+     */
+    
     public void setState() { 
     
     }
     
+    /**
+     * Display
+     */
     public void display()
     {
-        human.getWorld().addObject(new FinalBanner("gameover1.png"), 500, 125);
+        human.getWorld().addObject(new FinalBanner("gameover1.png"), 500, 230);
     }
 }

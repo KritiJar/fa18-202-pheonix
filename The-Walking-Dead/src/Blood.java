@@ -10,6 +10,9 @@ public class Blood extends Actor
         setImage(image1);
     }
     
+    /**
+     * Act of blood
+     */
     public void act() 
     {
         // By default, this act method gets executed again and again and increments delaycount,

@@ -13,11 +13,15 @@ public class Bullet extends Actor implements Subject
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private Message m;
+    private Actor blood;
+    
     private ArrayList<Observer> observers =  new ArrayList<Observer>();
     public void act() 
     {
-       m = (Message) getWorld().getObjects(Message.class).get(0);
+       //m = (Message) getWorld().getObjects(Message.class).get(0);
+       m = Message.getInstance();
         setLocation(getX() + speed, getY());
+        blood=new Blood();
        //checkBoundaries();
        destroyEnemies();
     } 
@@ -40,7 +44,10 @@ public class Bullet extends Actor implements Subject
        //"Enemy" can be any class that you want the bullet to destroy. 
        Actor enemy = getOneIntersectingObject(Zombie.class);
        if(enemy != null) {
-           notifyObservers("zombieBullet", m); 
+           notifyObservers("zombieBullet", m);
+           getWorld().addObject(blood, enemy.getX(), enemy.getY());
+           Greenfoot.delay(5);
+           getWorld().removeObject(blood);
            getWorld().removeObject(enemy);
            getWorld().removeObject(this);
            

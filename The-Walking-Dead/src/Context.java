@@ -8,6 +8,10 @@ public class Context
     public Context(iStrategy strategy) {
         this.strategy = strategy;
     }
+    
+    /**
+     * Execution of movement
+     */
     public void executeMovement(Actor a) {
         this.strategy.movement(a);
     }

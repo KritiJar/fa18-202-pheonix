@@ -2,6 +2,9 @@ import greenfoot.*;
 
 public class HumanMovement implements iStrategy
 {
+    /**
+     * Human movemment
+     */
     public void movement(Actor a){
         int x = 0; // local field to hold m ovement along the x-axis
         int y = 0; // local field to hold movement along the y-axis

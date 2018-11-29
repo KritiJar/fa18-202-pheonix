@@ -1,8 +1,8 @@
-public class halfSwordState implements iSwordState
+public class noSwordState implements iSwordState
 {
   
     public Sword sword;
-    public halfSwordState(Sword sword)
+    public noSwordState(Sword sword)
     {
     
     this.sword = sword;
@@ -17,29 +17,29 @@ public class halfSwordState implements iSwordState
         return false;
     }
     
+    
     /**
      * HasHalf
      */
-    
     public boolean hasHalf()
     {
-        return true;
+        return false;
     }
     
     /**
      * HasNoSword
-     */
-     public boolean hasNoSword()
+     */   
+    public boolean hasNoSword()
     {
-        return false;
+        return true;
     }
      
     /**
-     * Set state
+     * set state
      */
     public void setState()
     {
-        sword.setState(sword.getFullSwordState());
+        sword.setState(sword.getHalfSwordState());
     }
     
     /**
@@ -47,7 +47,7 @@ public class halfSwordState implements iSwordState
      */
     public void display()
     {
-        System.out.println("Half sword is taken");
+        System.out.println("No sword is taken");
     }
 
 

@@ -7,5 +7,8 @@ public class FinalBanner extends Actor //this actor(image) is for displaying whe
         setImage(image);
     }
     
+    /**
+     * Act of FinalBanner
+     */
     public void act(){}    
 }

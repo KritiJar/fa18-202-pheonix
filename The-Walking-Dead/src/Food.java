@@ -8,6 +8,8 @@ public class Food extends Actor // Food is the pizza slice that appears on the g
         image1.scale(image1.getWidth() - 20, image1.getHeight() - 20);
         setImage(image1);
     }
-    
+    /**
+     * Act of Food
+     */
     public void act(){}
 }

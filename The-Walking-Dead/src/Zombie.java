@@ -5,6 +5,10 @@ public class Zombie extends Actor
     
     Context context = new Context(new ZombieMovement());
     private Actor human;
+    
+    /**
+     * Act of Zombie
+     */
     public void act()
     {  
        context.executeMovement(this);
@@ -25,6 +29,9 @@ public class Zombie extends Actor
             return false;
     }
     
+    /**
+     * Turn at edge
+     */
     public void turnAtEdge()
     {
         if ( atWorldEdge() ) 

@@ -6,22 +6,37 @@ public class HumanAliveState implements iHumanState
     {
         this.human = human;
     }
+    
+    /**
+     * Human is alive
+     */
 
     public  boolean isAlive()
     {
         return true;
     }
     
+    /**
+     * Human is dead
+     */
+    
     public boolean isDead()
     {
         return false;
     }
     
+    /**
+     * Set state
+     */
      
     public void setState()
     {
         human.setState(human.getHumanDeadState());
     }
+    
+    /**
+     * Display
+     */
     
     public void display()
     {

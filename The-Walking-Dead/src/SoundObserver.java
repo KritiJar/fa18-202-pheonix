@@ -8,6 +8,10 @@ public class SoundObserver implements Observer
     {
     }
     
+    /**
+     * Update the item and message
+     */
+    
     public void update(String item, Message m)
     {
         
