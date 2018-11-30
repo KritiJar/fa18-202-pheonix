@@ -4,7 +4,7 @@ Date: 2018-11-21
 ## Stand-up Questions
 What tasks did I work on / complete?
 
-*Kriti: Done with sword functionality and implemented level state pattern
+*Kriti: Done with sword functionality using state pattern. Removed the error in message display by implementing singleton pattern for item collection observer and message 
 
 *Ruchika: Completed initial setup and implemented observer pattern to collecting items
 
@@ -13,13 +13,12 @@ What tasks did I work on / complete?
 *Harsh: Developed state pattern for human state
 
 What am I planning to work on next?
-*Ruchika: Add gun functionality and facade pattern
+*Ruchika: Add gun functionality and work on facade pattern
 
-*Harsh: Modify the message display code to remove gliches
+*Harsh: Imporve API
+*Kriti: Implement increasing the levels of games and increasing complexity and work on facade pattern
 
-*Kriti: Implement increseing the levels of games and increasing complexity
-
-*Hema: Implement increseing the levels of games and increasing complexity
+*Hema: Remove glitches of gun funtionality
 
 What tasks are blocked waiting on another team member?
 No blockers as of now
