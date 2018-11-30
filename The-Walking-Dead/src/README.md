@@ -13,6 +13,7 @@ The design patterns implemented in this game are:
 
 Brief showcase of our work:
   * Youtube Video Link : 
+  * Video link google drive: https://drive.google.com/open?id=1qPHeaUTUYQyV2S0eTGqsx-QsBMeXJO8F
   * Link to complete project report : 
 
 Team Members: Kriti Jar, Ruchika Hazariwal, Harsh Agarwal, Hemaprasanthi Mutyala
