@@ -35,6 +35,10 @@ public class Human extends Actor implements Subject
         context = new Context(new HumanMovement()); // Strategy Pattern
     }
     
+    /**
+     * Act of Human
+     */
+    
     public void act() 
     {
         m = Message.getInstance();
@@ -46,13 +50,16 @@ public class Human extends Actor implements Subject
         checkForSword();
         checkForZombie();
         checkForGun();
-        startDelayManWithKit();
+        startDelayHumanWithKit();
         checkFire();
         context.executeMovement(this);
         setGameLevel();
         checkGameOver();// Strategy Pattern for moving human across the world.
     } 
     
+    /**
+     * Set Game Level State
+     */
     public void setGameLevel()
     {
         creator=new ZombieFactory();
@@ -71,6 +78,9 @@ public class Human extends Actor implements Subject
         }
     }
     
+    /**
+     * Check for game over
+     */
     public void checkGameOver()
     {
         if(ItemCollectionObserver.zombieKilled ==23){ // If number of zombies == 0, display "You Win" message! and stop the game.
@@ -79,6 +89,10 @@ public class Human extends Actor implements Subject
             Greenfoot.stop();
         }
     }
+    
+    /**
+     * Check for food
+     */
     public void checkForFood() 
     {
       food = getOneIntersectingObject(Food.class);
@@ -88,7 +102,9 @@ public class Human extends Actor implements Subject
             getWorld().removeObject(food); // Human eats the food, so food should disppear from the world
         }
     }
-    //after the "act()" method, add a new method:
+    /**
+     * Check for gun and fire bullets
+     */
     public void checkFire()
     {
         
@@ -96,12 +112,13 @@ public class Human extends Actor implements Subject
             Greenfoot.delay(5);
             Bullet bullet = new Bullet();
             bullet.attach(ic); //attaching the ItemCollectionObserver
-            bullet.attach(new SoundObserver()); // attaching the SoundObserver
             bullet.setRotation(180*Greenfoot.getRandomNumber(2));
             getWorld().addObject(bullet, getX(), getY());
         }
     }
-    
+    /**
+     * Check for kit
+     */
     public void checkForKit()
     {
         kit = getOneIntersectingObject(Kit.class);
@@ -111,6 +128,9 @@ public class Human extends Actor implements Subject
         }
     }
     
+    /**
+     * Check for Gun
+     */
     public void checkForGun()
     {
         gun = getOneIntersectingObject(Gun.class);
@@ -120,6 +140,9 @@ public class Human extends Actor implements Subject
         }
     }
     
+    /**
+     * Check for Sword
+     */
     public void checkForSword()
     {
         sword = getOneIntersectingObject(Sword.class);
@@ -130,6 +153,9 @@ public class Human extends Actor implements Subject
         }
     }
     
+    /**
+     * Check for Zombie
+     */
     public void checkForZombie()
     {
         zombie = getOneIntersectingObject(Zombie.class);
@@ -154,12 +180,14 @@ public class Human extends Actor implements Subject
             }
             else{ // if the human has a kit, start delay to give some time for human and zombie to move away from each other.
                 startDelay = true;
-                startDelayManWithKit();
+                startDelayHumanWithKit();
             }
         }
     }
     
-    
+    /**
+     * Calculate score when game is over
+     */
     public void calculateScore(){
         int score = 0;
         int food = ItemCollectionObserver.foodCount;
@@ -176,7 +204,10 @@ public class Human extends Actor implements Subject
         m.setLocation(550, 350);
     }
     
-    public void startDelayManWithKit() // if the human has a kit, start delay to give some time for human and zombie to move away from each other.
+    /**
+     * Start delay Human with Kit
+     */
+    public void startDelayHumanWithKit() // if the human has a kit, start delay to give some time for human and zombie to move away from each other.
     {
          if(startDelay){
             delayCount2++;
@@ -191,7 +222,9 @@ public class Human extends Actor implements Subject
         }
     }
 
-    // OBSERVER PATTERN
+    /**
+     * Observer pattern
+     */
     public void attach(Observer obj){
         observers.add(obj);
      }
@@ -208,7 +241,9 @@ public class Human extends Actor implements Subject
     }
     
     
-    //STATE PATTERN
+    /**
+     * State pattern for Human state
+     */
     public void display() {
         humanState.display();
     }
