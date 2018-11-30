@@ -40,11 +40,34 @@ It helped in distributing the task  and providing the simplified interface.
 
 Overall ItemCollectionObserver was simplified to KitFacade, SwordFacade, HumanFacade, ZombieFacade, ZombieBulletFacade.
 
-### State Design Pattern : Human State
+### State Design Pattern : Human State (Ruchika Hazariwal)
+iHumanState
 
 HumanAliveState: Human is alive and if collides zombie then set state to humanDeadState 
 
 HumanDeadState: If human dies, state changes to HumanDeadState.
+
+### State Design Pattern: Sword State (Harsh Agarwal)
+iSwordState
+
+NoSwordState: Human doesn't have any sword parts.
+
+HalfSwordState: Human has one part of sword and same is updated to message
+
+FullSwordState: Human has both parts of sword and can kill one zombie.
+
+### Factory Pattern: Creating actors (Harsh Agarwal)
+
+KitFactory: To create kit
+ZombieFactory: To create zombie
+FoodFactory: To create Food
+GunFactory: To create gun
+SwordFactory: To create parts of sword
+
+### Strategy Pattern: Human and Zombie movement (Hemaprasanthi Mutyala)
+
+
+
 
 
 
