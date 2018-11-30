@@ -77,10 +77,6 @@ To make sure that single instance of message class is maintained throughout the 
 
 
 
-
-
-
-
 ## XP Values: Communication
 
 The primary value we focused on during our development was communication
@@ -90,8 +86,6 @@ We interacted regularly and had scrum meetings on scheduled time.
 We made sure that  everyone understands the current status of project and helped each to clear blockers.
 
 During our meetings we took each others feedback positively and worked on them to keep the pace of development going.
-
-
 
 
 
@@ -108,6 +102,7 @@ Google Sprint Task Sheet: https://github.com/nguyensjsu/fa18-202-pheonix/tree/ma
 
 Ad Video: https://youtu.be/lNh0St9qYlM
 
+Presentation: https://github.com/nguyensjsu/fa18-202-pheonix/tree/master/Presentation
 
 
 
