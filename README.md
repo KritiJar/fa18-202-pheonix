@@ -4,9 +4,12 @@ Phoenix team has developed a single player game called "The walking Dead".
 
 Team members:
 
--Kriti Jar
--Ruchika Hazariwal
--Harsh Agarwal
--Hemaprasanthi Mutyala
+Kriti Jar
+
+Ruchika Hazariwal
+
+Harsh Agarwal
+
+Hemaprasanthi Mutyala
 
 
