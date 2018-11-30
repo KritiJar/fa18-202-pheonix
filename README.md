@@ -1,4 +1,4 @@
-# fa18-202-pheonix
+# Fall-18-202-pheonix : "The Walking Dead"
 
 Phoenix team has developed a single player game called "The walking Dead".
 
@@ -65,6 +65,51 @@ GunFactory: To create gun
 SwordFactory: To create parts of sword
 
 ### Strategy Pattern: Human and Zombie movement (Hemaprasanthi Mutyala)
+iStrategy
+Context
+
+HumanMovement: handle the movement of human
+ZombieMovement: handle the movement of Zombie
+
+### Singleton Pattern: Message (Hemaprasanthi Mutyala)
+
+To make sure that single instance of message class is maintained throughout the game.
+
+
+
+
+
+
+
+## XP Values: Communication
+
+The primary value we focused on during our development was communication
+
+We interacted regularly and had scrum meetings on scheduled time.
+
+We made sure that  everyone understands the current status of project and helped each to clear blockers.
+
+During our meetings we took each others feedback positively and worked on them to keep the pace of development going.
+
+
+
+
+
+
+## Links:
+
+Source Code: https://github.com/nguyensjsu/fa18-202-pheonix/tree/master/The-Walking-Dead/src
+
+Project Board: https://github.com/nguyensjsu/fa18-202-pheonix/projects/1
+
+Project Journal: https://github.com/nguyensjsu/fa18-202-pheonix/tree/master/ProjectJournal/Scrum%20Report
+
+Google Sprint Task Sheet: https://github.com/nguyensjsu/fa18-202-pheonix/tree/master/ProjectJournal/Scrum%20Report/Task%20board
+
+Ad Video: https://youtu.be/lNh0St9qYlM
+
+
+
 
 
 
