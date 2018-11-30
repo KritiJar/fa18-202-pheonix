@@ -33,6 +33,21 @@ Ex. When human collects kit, ItemCollectionObserver is notifies that updates the
 
 If human, collects the sword, soundObserver is notified that plays the sound in background.
 
+### Facade Pattern: Simplifying ItemCollectionObserver (Ruchika Hazariwal)
+
+The Facade pattern was implemented to simplify the complex ItemCollectionObserver functionalities.
+It helped in distributing the task  and providing the simplified interface.
+
+Overall ItemCollectionObserver was simplified to KitFacade, SwordFacade, HumanFacade, ZombieFacade, ZombieBulletFacade.
+
+### State Design Pattern : Human State
+
+HumanAliveState: Human is alive and if collides zombie then set state to humanDeadState 
+
+HumanDeadState: If human dies, state changes to HumanDeadState.
+
+
+
 
 
 
