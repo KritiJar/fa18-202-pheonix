@@ -12,8 +12,7 @@ The design patterns implemented in this game are:
   6. Facade Pattern
 
 Brief showcase of our work:
-  * Youtube Video Link : 
+  * Youtube Video Link : https://youtu.be/lNh0St9qYlM
   * Video link google drive: https://drive.google.com/open?id=1qPHeaUTUYQyV2S0eTGqsx-QsBMeXJO8F
-  * Link to complete project report : 
 
 Team Members: Kriti Jar, Ruchika Hazariwal, Harsh Agarwal, Hemaprasanthi Mutyala
